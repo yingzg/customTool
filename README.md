@@ -59,3 +59,5 @@ if (!timeout1.isExpired()) {
 timer.newTimeout(timeout1.task(), 3, TimeUnit.SECONDS);
 ```
 
+ 具体原理见wheelTimer文档
+
