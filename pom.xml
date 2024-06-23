@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.3.1</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+    <groupId>com.gzy.custom</groupId>
+    <artifactId>usefulTool</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <name>usefulTool</name>
+    <description>usefulTool</description>
+
+    <modules>
+        <module>db2es</module>
+        <module>ttlAgent</module>
+        <module>ttlThreadlocal</module>
+        <module>wheelTimer</module>
+    </modules>
+
+    <url/>
+    <licenses>
+        <license/>
+    </licenses>
+    <developers>
+        <developer/>
+    </developers>
+    <scm>
+        <connection/>
+        <developerConnection/>
+        <tag/>
+        <url/>
+    </scm>
+    <properties>
+        <java.version>17</java.version>
+        <junit.version>4.12</junit.version>
+        <web.version>3.3.1</web.version>
+        <startTest.version>3.3.1</startTest.version>
+        <processor.version>3.3.0</processor.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <!--测试-->
+            <dependency>
+                <!--定义当前Maven项目隶属的实际项目，一个实际项目往往会被划分成很多模块-->
+                <groupId>junit</groupId>
+                <!--定义实际项目中的一个Maven项目（模块），推荐使用实际项目名称作为artifactId的前缀-->
+                <artifactId>junit</artifactId>
+                <!--Maven运行时会将POM中所有${junit.version}替换成实际值-->
+                <version>${junit.version}</version>
+                <!--scope为依赖范围，test表示该依赖只对测试有效-->
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-web</artifactId>
+                <version>${web.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-test</artifactId>
+                <version>${startTest.version}</version>
+                <scope>test</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-configuration-processor</artifactId>
+                <version>${processor.version}</version>
+                <optional>true</optional>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

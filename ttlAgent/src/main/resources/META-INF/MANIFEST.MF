@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Can-Redefine-Classes: false
+Can-Retransform-Classes: true
+Premain-Class: com.gzy.custom.TtlAgent.agent.TtlAgent
+
