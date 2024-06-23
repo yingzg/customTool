@@ -20,6 +20,7 @@
         <module>ttlAgent</module>
         <module>ttlThreadlocal</module>
         <module>wheelTimer</module>
+        <module>cache</module>
     </modules>
 
     <url/>
