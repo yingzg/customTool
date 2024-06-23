@@ -61,3 +61,5 @@ timer.newTimeout(timeout1.task(), 3, TimeUnit.SECONDS);
 
  具体原理见wheelTimer文档
 
+https://github.com/yingzg/customTool/tree/master/wheelTimer/doc
+
