@@ -1,0 +1,17 @@
+{
+  "number_of_shards": 5,
+  "number_of_replicas": 1,
+  "refresh_interval": "60s",
+  "index.query.default_field": "timestamp",
+  "index.mapping.ignore_malformed": false,
+  "index.mapping.coerce": false,
+  "index.requests.cache.enable": true,
+  "index.search.slowlog.threshold.query.warn": "1s",
+  "index.search.slowlog.threshold.query.info": "500ms",
+  "index.search.slowlog.threshold.fetch.warn": "1s",
+  "index.search.slowlog.threshold.fetch.info": "500ms",
+  "index.indexing.slowlog.threshold.index.warn": "5s",
+  "index.indexing.slowlog.threshold.index.info": "3s",
+  "index.query.parse.allow_unmapped_fields": false,
+  "index.max_result_window": 100000
+}

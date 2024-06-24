@@ -11,7 +11,7 @@ import lombok.Data;
 
 @Data
 @Document(indexName = "es_test_entity",type ="es_test_entity" )
-@Setting(settingPath = "templates/es_test_entity.json")
+@Setting(settingPath = "templates/es_test_entity_setting.json")
 public class TestEsEntity {
 
     @Id
